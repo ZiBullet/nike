@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: "Roboto-Regular";
+    background: #EBEBEB;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+.container-wider {
+    margin: 0 auto;
+    max-width: 1470px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;    
+}

@@ -1,0 +1,61 @@
+
+.main__video {
+    background: url("../imgs/poster-video.png") no-repeat center/cover;
+    height: 558px;
+    overflow: hidden;
+}
+
+.main__video__wrap {
+    position: relative;
+}
+.main__video__desc {
+    position: absolute;
+    top: -65px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 214px;
+    width: 400px;
+    background: #BABABA80;
+    color: #fff;
+    padding: 20px;
+    transition: .2s ease;
+}
+.main__video__watch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto-Bold";
+}
+
+.main__video__watch img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.main__video:hover .main__video__desc {
+    top: 0;
+}
+
+.main__video__title {
+    font-family: "Roboto-Bold";
+    justify-self: end;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+}
+
+.main__video__text {
+    font-family: "Roboto-Bold";
+    font-size: 40px;
+    justify-self: end;
+    font-weight: 700;
+    line-height: 47px;
+}
