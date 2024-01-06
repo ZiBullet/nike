@@ -36,10 +36,13 @@
 .main__news__cards {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
 .main__news__cards-card {
+    max-width: 352px;
+    width: 100%;
     background: #fff;
     padding: 15px;
     border: 1px solid #D7D6DC;
@@ -86,4 +89,17 @@
 .main__news__cards-card-desc_link:hover {
     background: #050505;
     color: #DFC900;
+}
+@media screen and (max-width: 1200px) {
+    .main__news__cards {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main__news__cards-card {
+        max-width: 300px;
+    }
+    .main__news__cards-card-desc_text {
+        font-size: 14px;
+    }
 }

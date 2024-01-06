@@ -9,7 +9,7 @@
 }
 
 .header__nav-logo {
-    padding: 14px 0;
+    padding-top: 14px;
 }
 
 .header__nav-list {
@@ -18,6 +18,7 @@
 }
 
 .header__nav-list-item-link {
+    display: block;
     padding: 24px 15px;
     color: #fff;
     font-size: 16px;
@@ -29,4 +30,23 @@
 .header__nav-list-item-link:hover {
     color: #FFE600;
     border-bottom: 2px solid #fff;
+}
+@media screen and (max-width: 896px) {
+    .header__nav {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 724px) {
+    .header__nav-list-item-link {
+        padding: 18px 10px;
+    }
+}
+@media screen and (max-width: 656px) {
+    .header__nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__nav-list-item-link {
+        padding: 10px 5px;
+    }
 }
