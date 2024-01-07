@@ -13,8 +13,10 @@
 }
 
 .footer__nav-list {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -44,6 +46,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
+    text-align: center;
 }
 .footer__developed__text a {
     font-family: "Roboto-Bold";
@@ -55,4 +58,14 @@
 }
 .footer__developed__text a:hover {
     color: #DFC900;
+}
+@media screen and (max-width: 720px) {
+    .footer__nav-list {
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .footer__nav-list {
+        flex-wrap: wrap;
+    }
 }

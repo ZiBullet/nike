@@ -46,7 +46,6 @@
 
 .main__video__title {
     font-family: "Roboto-Bold";
-    justify-self: end;
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
@@ -55,7 +54,43 @@
 .main__video__text {
     font-family: "Roboto-Bold";
     font-size: 40px;
-    justify-self: end;
     font-weight: 700;
     line-height: 47px;
+}
+@media screen and (max-width: 768px) {
+    .main__video:hover .main__video__desc {
+        top: 50%;
+    }
+
+    .main__video__desc {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 480px) {
+    .main__video__desc {
+        width: 300px;
+    }
+    .main__video__title {
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .main__video__text {
+        font-size: 24px;
+        line-height: 27px;
+    }
+    
+    .main__video__watch {
+        font-size: 16px;
+    }
+    .main__video__watch img {
+        width: 25px;
+        height: 25px;
+    }
+} 
+@media screen and (max-width: 320px) {
+    .main__video__desc {
+        width: 280px;
+    }
 }
